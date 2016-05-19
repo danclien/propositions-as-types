@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -20,14 +20,317 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<style>
+			code {
+				font-size: 80% !important;
+				padding: 0.5 em;
+				background: #ffe;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Thinking with Propositions as Types</h1>
+				</section>
+
+				<section>
+					<h2>What this presentation is not about</h2>
+					<ul>
+						<li class="fragment"><p>Deep dive into logic, computation, and their history</p></li>
+						<li class="fragment"><p>Static typing vs dynamic typing</p></li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>TL;DR</h1>
+					<p class="fragment highlight-red shrink" data-fragment-index="3">Math* and programming* are the Same Thing™</p>
+					<p class="fragment fade-in" data-fragment-index="3">Logic and computation are equivalent</p>
+					<img class="fragment" data-fragment-index="1" src="img/micdrop.gif" style="height: 300px">
+					<small class="fragment" data-fragment-index="2">Disclaimer: For some values of math, programming, and Same Thing™</small>
+				</section>
+
+				<section>
+					<h1>TL;DR</h1>
+					<p>Logic and computation are equivalent</p>
+					<ul class="fragment">
+						<li><p>Also known as the Curry-Howard correspondent</p></li>
+						<li class="fragment highlight-blue"><p>Linking two fields of study together</p></li>
+						<li class="fragment highlight-blue"><p>Discoveries in one field also applies to the other</p></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Breaking it down</h2>
+					<ul>
+						<li class="fragment">
+							<p>Propositions as types</p>
+							<ul>
+								<li class="fragment">Proposition → statement that is true or false*</li>
+								<li class="fragment">Type → describes the possible values*</li>
+							</ul>
+						</li>
+						<li class="fragment"><p>Proofs as programs</p></li>
+						<li class="fragment"><p>Simplification of proofs as evaluation of programs</p></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Remember this</h2>
+				  <p>Writing proofs and writing programming are equivalent</p>
+				</section>
+
+				<section>
+					<h2>The Paper</h2>
+					<ul>
+						<li class="fragment">
+							<p>History</p>
+							<ul>
+								<li><p>Go watch Philip Wadler's Strange Loop video</p></li>
+							</ul>
+						</li>
+						<li class="fragment">
+							<p>Equivalent systems and models</p>
+							<ul>
+								<li><p>How different systems and models can be translated between each other</p></li>
+							</ul>
+						</li>
+						<li class="fragment">
+							<p>Illustration</p>
+							<ul>
+								<li><p class="fragment highlight-blue">Similarities between natural deduction and simply-typed lambda calculus</p></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Tracing the steps</h2>
+					<div class="fragment"  data-fragment-index="1" >
+						<p class="fragment highlight-blue" data-fragment-index="1">Natural deduction : Simply typed lambda calculus</p>
+						<p>↓</p>
+						<p  class="fragment highlight-red" data-fragment-index="2" >???</p>
+						<p>↓</p>
+						<p class="fragment highlight-green" data-fragment-index="3" >Writing proofs : Writing programs</p>
+					</div>
+				</section>
+
+				<section>
+					<h4>Natural deduction → Writing proofs</h4>
+					<ul>
+						<li><p>Natural deduction is a proof calculus</p></li>
+						<li><p>Rules and system for describing formal inference</p></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Tracing the steps</h2>
+					<div>
+						<p data-fragment-index="1">Natural deduction : Simply typed lambda calculus</p>
+						<p>↓</p>
+						<p><span class="fragment highlight-blue" data-fragment-index="1">is a proof calculus for</span> : <span class="fragment highlight-red">???</span></p>
+						<p>↓</p>
+						<p>Writing proofs : Writing programs</p>
+					</div>
+				</section>
+
+				<section>
+					<h4>Simply typed lambda calculus → Writing programs</h4>
+					<ul>
+						<li>
+							<p>Computation models</p>
+							<ul>
+								<li><p class="fragment highlight-current-blue">Turing machines</p></li>
+								<li><p class="fragment highlight-current-blue">Recursive functions</p></li>
+								<li><p class="fragment highlight-current-blue">Lambda calculus</p></li>
+							</ul>
+						</li>
+						<li class="fragment">
+							<p>All the computation models above are equivalent</p>
+						</li>
+
+					</ul>
+				</section>
+
+				<section>
+					<h2>Tracing the steps</h2>
+					<div>
+						<p data-fragment-index="1">Natural deduction : Simply typed lambda calculus</p>
+						<p>↓</p>
+						<p><span data-fragment-index="1">is a proof calculus for</span> : <span class="fragment highlight-blue">can be used to write</span></p>
+						<p>↓</p>
+						<p>Writing proofs : Writing programs</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Natural deduction</h2>
+					<ul>
+						<li>
+							<p>Logical operators/connectives</p>
+							<ul>
+								<li class="fragment"><p>Conjunction (&amp;, and) </p></li>
+								<li class="fragment"><p>Disjunction (∨, or)</p></li>
+								<li class="fragment"><p>Implication (⊃, if...then)</p></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Natural deduction</h2>
+					<h4>Syntax</h4>
+					<img src="img/nd_syntax.png">
+				</section>
+
+				<section>
+					<h2>Natural deduction</h2>
+					<h4>Syntax</h4>
+					<img src="img/nd_syntax_labeled.png">
+				</section>
+
+				<section>
+					<h2>Natural deduction</h2>
+					<h4>Rules</h4>
+					<img src="img/nd_rules.png">
+				</section>
+
+				<section>
+					<h2>Natural deduction</h2>
+					<h4>Simple proof</h4>
+					<img src="img/nd_proof_1.png">
+				</section>
+
+				<section>
+					<h2>Natural deduction</h2>
+					<h4>Simple proof</h4>
+					<img src="img/nd_proof_2.png">
+				</section>
+
+				<section>
+					<h2>Natural deduction</h2>
+					<h4>Simple proof</h4>
+					<img src="img/nd_proof_3.png">
+				</section>
+
+				<section>
+					<h2>Natural deduction</h2>
+					<h4>Simple proof</h4>
+					<img src="img/nd_proof_4.png">
+				</section>
+
+				<section>
+					<h2>Natural deduction</h2>
+					<h4>Simple proof</h4>
+					<img src="img/nd_proof_5.png">
+				</section>
+
+				<section>
+					<h2>Natural deduction</h2>
+					<h4>Simple proof</h4>
+					<img src="img/nd_proof_6.png">
+				</section>
+
+				<section>
+					<h2>Simply-typed lambda calculus</h2>
+					<ul>
+						<li>
+							<p>Types</p>
+							<ul>
+								<li class="fragment">
+									<p>Product (×) </p>
+									<ul>
+										<li><p>Javascript: <code>{"name": "Sue", "age": 40}</code></p></li>
+										<li><p>Tuples in Python: <code>("Sue", 40)</code></p></li>
+									</ul>
+								</li>
+								<li class="fragment">
+									<p>Function (→)</p>
+									<ul>
+										<li>
+											<code>
+												function convertToString(/* Number */ a) { return a.toString(); }
+											</code>
+										</li>
+									</ui>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Simply-typed lambda calculus</h2>
+					<h4>Rules</h4>
+					<img src="img/lc_product_1.png">
+				</section>
+
+				<section>
+					<h2>Simply-typed lambda calculus</h2>
+					<h4>Rules</h4>
+					<img src="img/lc_product_2.png">
+				</section>
+
+				<section>
+					<h2>Simply-typed lambda calculus</h2>
+					<h4>Rules</h4>
+					<img src="img/lc_product_3.png">
+				</section>
+
+				<section>
+					<h2>Simply-typed lambda calculus</h2>
+					<h4>Rules</h4>
+					<img src="img/lc_product_4.png">
+				</section>
+
+				<section>
+					<h2>Simply-typed lambda calculus</h2>
+					<h4>Rules</h4>
+					<img src="img/lc_function_1.png">
+				</section>
+
+				<section>
+					<h2>Simply-typed lambda calculus</h2>
+					<h4>Rules</h4>
+					<img src="img/lc_function_2.png">
+				</section>
+
+				<section>
+					<h2>Simply-typed lambda calculus</h2>
+					<h4>Simple proof</h4>
+					<img src="img/lc_compare.png" >
+				</section>
+
+				<section>
+					<h2>Tracing the steps</h2>
+					<div>
+						<p class="fragment highlight-blue">Natural deduction : Simply typed lambda calculus</p>
+						<p>↓</p>
+						<p>is a proof calculus for: can be used to write</p>
+						<p>↓</p>
+						<p class="fragment highlight-blue">Writing proofs : Writing programs</p>
+					</div>
+				</section>
+
+				<section>
+					<h1>Live proof</h1>
+				</section>
+
+				<section>
+					<h2>Remember this</h2>
+				  <p>Writing proofs and writing programming are equivalent</p>
+				</section>
+
+				<section>
+					<h1>Questions</h1>
+				</section>
+
 			</div>
 		</div>
+
+
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
@@ -36,6 +339,9 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+				controls: false,
+			  progress: false,
+				transition: 'fade',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [

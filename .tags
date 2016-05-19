@@ -1,0 +1,209 @@
+html	/Users/dan/propositions-as-types/index.html	/^<html>$/;"	function	line:2
+head	/Users/dan/propositions-as-types/index.html	/^	<head>$/;"	function	line:3
+meta	/Users/dan/propositions-as-types/index.html	/^		<meta charset="utf-8">$/;"	function	line:4
+meta	/Users/dan/propositions-as-types/index.html	/^		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">$/;"	function	line:5
+title	/Users/dan/propositions-as-types/index.html	/^		<title>reveal.js<\/title>$/;"	function	line:7
+link	/Users/dan/propositions-as-types/index.html	/^		<link rel="stylesheet" href="css\/reveal.css">$/;"	function	line:9
+link	/Users/dan/propositions-as-types/index.html	/^		<link rel="stylesheet" href="css\/theme\/sky.css">$/;"	function	line:10
+link	/Users/dan/propositions-as-types/index.html	/^		<link rel="stylesheet" href="lib\/css\/zenburn.css">$/;"	function	line:13
+script	/Users/dan/propositions-as-types/index.html	/^		<script>$/;"	function	line:16
+style	/Users/dan/propositions-as-types/index.html	/^		<style>$/;"	function	line:24
+body	/Users/dan/propositions-as-types/index.html	/^	<body>$/;"	function	line:32
+div	/Users/dan/propositions-as-types/index.html	/^		<div class="reveal">$/;"	function	line:33
+div	/Users/dan/propositions-as-types/index.html	/^			<div class="slides">$/;"	function	line:34
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:35
+h	/Users/dan/propositions-as-types/index.html	/^					<h1>Thinking with Propositions as Types<\/h1>$/;"	function	line:36
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:39
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>What this presentation is not about<\/h2>$/;"	function	line:40
+ul	/Users/dan/propositions-as-types/index.html	/^					<ul>$/;"	function	line:41
+li	/Users/dan/propositions-as-types/index.html	/^						<li class="fragment"><p>Deep dive into logic, computation, and their history<\/p><\/li>$/;"	function	line:42
+li	/Users/dan/propositions-as-types/index.html	/^						<li class="fragment"><p>Static typing vs dynamic typing<\/p><\/li>$/;"	function	line:43
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:47
+h	/Users/dan/propositions-as-types/index.html	/^					<h1>TL;DR<\/h1>$/;"	function	line:48
+p	/Users/dan/propositions-as-types/index.html	/^					<p class="fragment highlight-red shrink" data-fragment-index="3">Math* and programming* are the Same Thing™<\/p>$/;"	function	line:49
+p	/Users/dan/propositions-as-types/index.html	/^					<p class="fragment fade-in" data-fragment-index="3">Logic and computation are equivalent<\/p>$/;"	function	line:50
+img	/Users/dan/propositions-as-types/index.html	/^					<img class="fragment" data-fragment-index="1" src="img\/micdrop.gif" style="height: 300px">$/;"	function	line:51
+small	/Users/dan/propositions-as-types/index.html	/^					<small class="fragment" data-fragment-index="2">Disclaimer: For some values of math, programming, and Same Thing™<\/small>$/;"	function	line:52
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:55
+h	/Users/dan/propositions-as-types/index.html	/^					<h1>TL;DR<\/h1>$/;"	function	line:56
+p	/Users/dan/propositions-as-types/index.html	/^					<p>Logic and computation are equivalent<\/p>$/;"	function	line:57
+ul	/Users/dan/propositions-as-types/index.html	/^					<ul class="fragment">$/;"	function	line:58
+li	/Users/dan/propositions-as-types/index.html	/^						<li><p>Also known as the Curry-Howard correspondent<\/p><\/li>$/;"	function	line:59
+li	/Users/dan/propositions-as-types/index.html	/^						<li class="fragment highlight-blue"><p>Linking two fields of study together<\/p><\/li>$/;"	function	line:60
+li	/Users/dan/propositions-as-types/index.html	/^						<li class="fragment highlight-blue"><p>Discoveries in one field also applies to the other<\/p><\/li>$/;"	function	line:61
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:65
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Breaking it down<\/h2>$/;"	function	line:66
+ul	/Users/dan/propositions-as-types/index.html	/^					<ul>$/;"	function	line:67
+li	/Users/dan/propositions-as-types/index.html	/^						<li class="fragment">$/;"	function	line:68
+p	/Users/dan/propositions-as-types/index.html	/^							<p>Propositions as types<\/p>$/;"	function	line:69
+ul	/Users/dan/propositions-as-types/index.html	/^							<ul>$/;"	function	line:70
+li	/Users/dan/propositions-as-types/index.html	/^								<li class="fragment">Proposition → statement that is true or false*<\/li>$/;"	function	line:71
+li	/Users/dan/propositions-as-types/index.html	/^								<li class="fragment">Type → describes the possible values*<\/li>$/;"	function	line:72
+li	/Users/dan/propositions-as-types/index.html	/^						<li class="fragment"><p>Proofs as programs<\/p><\/li>$/;"	function	line:75
+li	/Users/dan/propositions-as-types/index.html	/^						<li class="fragment"><p>Simplification of proofs as evaluation of programs<\/p><\/li>$/;"	function	line:76
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:80
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Remember this<\/h2>$/;"	function	line:81
+p	/Users/dan/propositions-as-types/index.html	/^				  <p>Writing proofs and writing programming are equivalent<\/p>$/;"	function	line:82
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:85
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>The Paper<\/h2>$/;"	function	line:86
+ul	/Users/dan/propositions-as-types/index.html	/^					<ul>$/;"	function	line:87
+li	/Users/dan/propositions-as-types/index.html	/^						<li class="fragment">$/;"	function	line:88
+p	/Users/dan/propositions-as-types/index.html	/^							<p>History<\/p>$/;"	function	line:89
+ul	/Users/dan/propositions-as-types/index.html	/^							<ul>$/;"	function	line:90
+li	/Users/dan/propositions-as-types/index.html	/^								<li><p>Go watch Philip Wadler's Strange Loop video<\/p><\/li>$/;"	function	line:91
+li	/Users/dan/propositions-as-types/index.html	/^						<li class="fragment">$/;"	function	line:94
+p	/Users/dan/propositions-as-types/index.html	/^							<p>Equivalent systems and models<\/p>$/;"	function	line:95
+ul	/Users/dan/propositions-as-types/index.html	/^							<ul>$/;"	function	line:96
+li	/Users/dan/propositions-as-types/index.html	/^								<li><p>How different systems and models can be translated between each other<\/p><\/li>$/;"	function	line:97
+li	/Users/dan/propositions-as-types/index.html	/^						<li class="fragment">$/;"	function	line:100
+p	/Users/dan/propositions-as-types/index.html	/^							<p>Illustration<\/p>$/;"	function	line:101
+ul	/Users/dan/propositions-as-types/index.html	/^							<ul>$/;"	function	line:102
+li	/Users/dan/propositions-as-types/index.html	/^								<li><p class="fragment highlight-blue">Similarities between natural deduction and simply-typed lambda calculus<\/p><\/li>$/;"	function	line:103
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:109
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Tracing the steps<\/h2>$/;"	function	line:110
+div	/Users/dan/propositions-as-types/index.html	/^					<div class="fragment"  data-fragment-index="1" >$/;"	function	line:111
+p	/Users/dan/propositions-as-types/index.html	/^						<p class="fragment highlight-blue" data-fragment-index="1">Natural deduction : Simply typed lambda calculus<\/p>$/;"	function	line:112
+p	/Users/dan/propositions-as-types/index.html	/^						<p>↓<\/p>$/;"	function	line:113
+p	/Users/dan/propositions-as-types/index.html	/^						<p  class="fragment highlight-red" data-fragment-index="2" >???<\/p>$/;"	function	line:114
+p	/Users/dan/propositions-as-types/index.html	/^						<p>↓<\/p>$/;"	function	line:115
+p	/Users/dan/propositions-as-types/index.html	/^						<p class="fragment highlight-green" data-fragment-index="3" >Writing proofs : Writing programs<\/p>$/;"	function	line:116
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:120
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Natural deduction → Writing proofs<\/h4>$/;"	function	line:121
+ul	/Users/dan/propositions-as-types/index.html	/^					<ul>$/;"	function	line:122
+li	/Users/dan/propositions-as-types/index.html	/^						<li><p>Natural deduction is a proof calculus<\/p><\/li>$/;"	function	line:123
+li	/Users/dan/propositions-as-types/index.html	/^						<li><p>Rules and system for describing formal inference<\/p><\/li>$/;"	function	line:124
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:128
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Tracing the steps<\/h2>$/;"	function	line:129
+div	/Users/dan/propositions-as-types/index.html	/^					<div>$/;"	function	line:130
+p	/Users/dan/propositions-as-types/index.html	/^						<p data-fragment-index="1">Natural deduction : Simply typed lambda calculus<\/p>$/;"	function	line:131
+p	/Users/dan/propositions-as-types/index.html	/^						<p>↓<\/p>$/;"	function	line:132
+p	/Users/dan/propositions-as-types/index.html	/^						<p><span class="fragment highlight-blue" data-fragment-index="1">is a proof calculus for<\/span> : <span class="fragment highlight-red">???<\/span><\/p>$/;"	function	line:133
+p	/Users/dan/propositions-as-types/index.html	/^						<p>↓<\/p>$/;"	function	line:134
+p	/Users/dan/propositions-as-types/index.html	/^						<p>Writing proofs : Writing programs<\/p>$/;"	function	line:135
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:139
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Simply typed lambda calculus → Writing programs<\/h4>$/;"	function	line:140
+ul	/Users/dan/propositions-as-types/index.html	/^					<ul>$/;"	function	line:141
+li	/Users/dan/propositions-as-types/index.html	/^						<li>$/;"	function	line:142
+p	/Users/dan/propositions-as-types/index.html	/^							<p>Computation models<\/p>$/;"	function	line:143
+ul	/Users/dan/propositions-as-types/index.html	/^							<ul>$/;"	function	line:144
+li	/Users/dan/propositions-as-types/index.html	/^								<li><p class="fragment highlight-current-blue">Turing machines<\/p><\/li>$/;"	function	line:145
+li	/Users/dan/propositions-as-types/index.html	/^								<li><p class="fragment highlight-current-blue">Recursive functions<\/p><\/li>$/;"	function	line:146
+li	/Users/dan/propositions-as-types/index.html	/^								<li><p class="fragment highlight-current-blue">Lambda calculus<\/p><\/li>$/;"	function	line:147
+li	/Users/dan/propositions-as-types/index.html	/^						<li class="fragment">$/;"	function	line:150
+p	/Users/dan/propositions-as-types/index.html	/^							<p>All the computation models above are equivalent<\/p>$/;"	function	line:151
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:157
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Tracing the steps<\/h2>$/;"	function	line:158
+div	/Users/dan/propositions-as-types/index.html	/^					<div>$/;"	function	line:159
+p	/Users/dan/propositions-as-types/index.html	/^						<p data-fragment-index="1">Natural deduction : Simply typed lambda calculus<\/p>$/;"	function	line:160
+p	/Users/dan/propositions-as-types/index.html	/^						<p>↓<\/p>$/;"	function	line:161
+p	/Users/dan/propositions-as-types/index.html	/^						<p><span data-fragment-index="1">is a proof calculus for<\/span> : <span class="fragment highlight-blue">can be used to write<\/span><\/p>$/;"	function	line:162
+p	/Users/dan/propositions-as-types/index.html	/^						<p>↓<\/p>$/;"	function	line:163
+p	/Users/dan/propositions-as-types/index.html	/^						<p>Writing proofs : Writing programs<\/p>$/;"	function	line:164
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:168
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Natural deduction<\/h2>$/;"	function	line:169
+ul	/Users/dan/propositions-as-types/index.html	/^					<ul>$/;"	function	line:170
+li	/Users/dan/propositions-as-types/index.html	/^						<li>$/;"	function	line:171
+p	/Users/dan/propositions-as-types/index.html	/^							<p>Logical operators\/connectives<\/p>$/;"	function	line:172
+ul	/Users/dan/propositions-as-types/index.html	/^							<ul>$/;"	function	line:173
+li	/Users/dan/propositions-as-types/index.html	/^								<li class="fragment"><p>Conjunction (&amp;, and) <\/p><\/li>$/;"	function	line:174
+li	/Users/dan/propositions-as-types/index.html	/^								<li class="fragment"><p>Disjunction (∨, or)<\/p><\/li>$/;"	function	line:175
+li	/Users/dan/propositions-as-types/index.html	/^								<li class="fragment"><p>Implication (⊃, if...then)<\/p><\/li>$/;"	function	line:176
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:182
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Natural deduction<\/h2>$/;"	function	line:183
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Syntax<\/h4>$/;"	function	line:184
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/nd_syntax.png">$/;"	function	line:185
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:188
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Natural deduction<\/h2>$/;"	function	line:189
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Syntax<\/h4>$/;"	function	line:190
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/nd_syntax_labeled.png">$/;"	function	line:191
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:194
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Natural deduction<\/h2>$/;"	function	line:195
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Rules<\/h4>$/;"	function	line:196
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/nd_rules.png">$/;"	function	line:197
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:200
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Natural deduction<\/h2>$/;"	function	line:201
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Simple proof<\/h4>$/;"	function	line:202
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/nd_proof_1.png">$/;"	function	line:203
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:206
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Natural deduction<\/h2>$/;"	function	line:207
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Simple proof<\/h4>$/;"	function	line:208
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/nd_proof_2.png">$/;"	function	line:209
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:212
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Natural deduction<\/h2>$/;"	function	line:213
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Simple proof<\/h4>$/;"	function	line:214
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/nd_proof_3.png">$/;"	function	line:215
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:218
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Natural deduction<\/h2>$/;"	function	line:219
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Simple proof<\/h4>$/;"	function	line:220
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/nd_proof_4.png">$/;"	function	line:221
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:224
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Natural deduction<\/h2>$/;"	function	line:225
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Simple proof<\/h4>$/;"	function	line:226
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/nd_proof_5.png">$/;"	function	line:227
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:230
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Natural deduction<\/h2>$/;"	function	line:231
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Simple proof<\/h4>$/;"	function	line:232
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/nd_proof_6.png">$/;"	function	line:233
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:236
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Simply-typed lambda calculus<\/h2>$/;"	function	line:237
+ul	/Users/dan/propositions-as-types/index.html	/^					<ul>$/;"	function	line:238
+li	/Users/dan/propositions-as-types/index.html	/^						<li>$/;"	function	line:239
+p	/Users/dan/propositions-as-types/index.html	/^							<p>Types<\/p>$/;"	function	line:240
+ul	/Users/dan/propositions-as-types/index.html	/^							<ul>$/;"	function	line:241
+li	/Users/dan/propositions-as-types/index.html	/^								<li class="fragment">$/;"	function	line:242
+p	/Users/dan/propositions-as-types/index.html	/^									<p>Product (×) <\/p>$/;"	function	line:243
+ul	/Users/dan/propositions-as-types/index.html	/^									<ul>$/;"	function	line:244
+li	/Users/dan/propositions-as-types/index.html	/^										<li><p>Javascript: <code>{"name": "Sue", "age": 40}<\/code><\/p><\/li>$/;"	function	line:245
+li	/Users/dan/propositions-as-types/index.html	/^										<li><p>Tuples in Python: <code>("Sue", 40)<\/code><\/p><\/li>$/;"	function	line:246
+li	/Users/dan/propositions-as-types/index.html	/^								<li class="fragment">$/;"	function	line:249
+p	/Users/dan/propositions-as-types/index.html	/^									<p>Function (→)<\/p>$/;"	function	line:250
+ul	/Users/dan/propositions-as-types/index.html	/^									<ul>$/;"	function	line:251
+li	/Users/dan/propositions-as-types/index.html	/^										<li>$/;"	function	line:252
+code	/Users/dan/propositions-as-types/index.html	/^											<code>$/;"	function	line:253
+convertToString	/Users/dan/propositions-as-types/index.html	/^												function convertToString(\/* Number *\/ a) { return a.toString(); }$/;"	function	line:254
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:264
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Simply-typed lambda calculus<\/h2>$/;"	function	line:265
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Rules<\/h4>$/;"	function	line:266
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/lc_product_1.png">$/;"	function	line:267
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:270
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Simply-typed lambda calculus<\/h2>$/;"	function	line:271
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Rules<\/h4>$/;"	function	line:272
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/lc_product_2.png">$/;"	function	line:273
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:276
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Simply-typed lambda calculus<\/h2>$/;"	function	line:277
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Rules<\/h4>$/;"	function	line:278
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/lc_product_3.png">$/;"	function	line:279
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:282
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Simply-typed lambda calculus<\/h2>$/;"	function	line:283
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Rules<\/h4>$/;"	function	line:284
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/lc_product_4.png">$/;"	function	line:285
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:288
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Simply-typed lambda calculus<\/h2>$/;"	function	line:289
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Rules<\/h4>$/;"	function	line:290
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/lc_function_1.png">$/;"	function	line:291
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:294
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Simply-typed lambda calculus<\/h2>$/;"	function	line:295
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Rules<\/h4>$/;"	function	line:296
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/lc_function_2.png">$/;"	function	line:297
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:300
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Simply-typed lambda calculus<\/h2>$/;"	function	line:301
+h	/Users/dan/propositions-as-types/index.html	/^					<h4>Simple proof<\/h4>$/;"	function	line:302
+img	/Users/dan/propositions-as-types/index.html	/^					<img src="img\/lc_compare.png" >$/;"	function	line:303
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:306
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Tracing the steps<\/h2>$/;"	function	line:307
+div	/Users/dan/propositions-as-types/index.html	/^					<div>$/;"	function	line:308
+p	/Users/dan/propositions-as-types/index.html	/^						<p class="fragment highlight-blue">Natural deduction : Simply typed lambda calculus<\/p>$/;"	function	line:309
+p	/Users/dan/propositions-as-types/index.html	/^						<p>↓<\/p>$/;"	function	line:310
+p	/Users/dan/propositions-as-types/index.html	/^						<p>is a proof calculus for: can be used to write<\/p>$/;"	function	line:311
+p	/Users/dan/propositions-as-types/index.html	/^						<p>↓<\/p>$/;"	function	line:312
+p	/Users/dan/propositions-as-types/index.html	/^						<p class="fragment highlight-blue">Writing proofs : Writing programs<\/p>$/;"	function	line:313
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:317
+h	/Users/dan/propositions-as-types/index.html	/^					<h1>Live proof<\/h1>$/;"	function	line:318
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:321
+h	/Users/dan/propositions-as-types/index.html	/^					<h2>Remember this<\/h2>$/;"	function	line:322
+p	/Users/dan/propositions-as-types/index.html	/^				  <p>Writing proofs and writing programming are equivalent<\/p>$/;"	function	line:323
+section	/Users/dan/propositions-as-types/index.html	/^				<section>$/;"	function	line:326
+h	/Users/dan/propositions-as-types/index.html	/^					<h1>Questions<\/h1>$/;"	function	line:327
+script	/Users/dan/propositions-as-types/index.html	/^		<script src="lib\/js\/head.min.js"><\/script>$/;"	function	line:335
+script	/Users/dan/propositions-as-types/index.html	/^		<script src="js\/reveal.js"><\/script>$/;"	function	line:336
+script	/Users/dan/propositions-as-types/index.html	/^		<script>$/;"	function	line:338
